@@ -1,0 +1,275 @@
+
+  #name{
+    text-align: center;
+  }
+
+/*NAVBAR CSS START*/
+
+  .navigation {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding:0% 0.5%;
+  }
+
+.navigation a {
+  float: left;
+  padding: 14px 14px;
+  color: white;
+  background-color: #B26DA3;
+  text-decoration: none;
+  font-size: 26px;
+  width: 23%;
+  text-align: center; 
+  margin:0px 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  background-color:#86428b85;
+  color:#8ef72d;
+  border-radius: 10px;
+}
+
+.navigation a.active {
+  background-color: #955999;
+}
+
+/*NAVBAR CSS END*/
+
+h1{
+  color:#864288;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+#banner{
+  width: 100%;
+  height: auto;
+}
+
+/*ARTICLE FORMATTING START*/
+
+article{
+  width: 95%;
+  height: 300px;
+  background-color: #E9F3F8;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  margin:15px;
+}
+
+article p{
+    font-size: 18px;
+  font-weight: 550;
+}
+
+article h2{
+  font-weight: 1000;
+}
+/*ARTICLE FORMATTING END*/
+
+/*ROW AND COLLUMN FORMATTING START*/
+#right{
+  float:right;
+}
+
+.column {
+  float: left;
+  padding: 0px;
+  
+}
+
+.leftLarge{
+  width: 40%;
+  height: 650px;
+}
+
+.rightLarge{
+  width: 60%;
+  height: 650px;
+}
+
+.left{
+  width: 50%;
+  height: 705px;
+}
+
+.middle {
+  width: 23%;
+  height: 705px;
+}
+
+.right{
+  width:25%;
+  height: 650 px;
+  padding-right:15px;
+  padding-left:15px;
+  padding-bottom:15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*ROW AND COLLUMN FORMATTING END*/
+
+#listening{
+  padding-top:14px;
+  padding-left:10px;
+
+  height: 328px;
+  width: 98%;
+}
+#flute{
+  padding-top:14px;
+  padding-left:10px;
+
+  height: 328px;
+  width: auto;
+}
+
+#news{
+  background-color: #ffe5f9;
+  height:678px;
+  padding: 0px;
+  margin-left:15px;
+  width:auto;
+  margin-bottom: 5px;
+}
+
+footer {
+	background-color: #c99cbf;
+	height: 60px;		
+}
+
+footer p {
+  font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif ;
+	text-align: center;
+	padding-top: 20px;
+	color: #ffffff;
+}
+
+/*HOME NEWS TAB FORMATTING START*/
+#newsP{
+  background-color: #ffe5f9;
+}
+.newsBack{
+  background-color: #B26DA3;
+  height: 675px;
+  width:auto;
+}
+
+.articleBodiesTop{
+  background-color: #ffe5f9;
+  height: 80px;
+  margin-bottom: 1px;
+  padding-top: 10px;  
+  padding-bottom: 10px;
+  width:auto;
+}
+
+.articleBodies{
+  background-color: #ffe5f9;
+  height: 80px;
+  margin-bottom: 1px;
+  padding-top: 30px;  
+  padding-bottom: 10px;
+  width:auto;
+}
+
+.articleBodiesFill{
+  background-color: #ffe5f9;
+  height: 50px;
+  margin-bottom: 1px;
+  padding-top: 30px;  
+  padding-bottom: 10px;
+  width:auto;
+}
+
+
+.newsLighter{
+  background-color: #ffe5f9;
+  height: 543px;
+  padding: 30px;
+}
+    
+.newsDarker{
+  background-color: #B26DA3;
+  height: 550px;
+  width:auto;
+}
+
+.newsHeader{
+  background-color: #ffe5f9;
+  height:50px;
+  font-family: 'Heebo', sans-serif;
+  text-align:center;
+  font-size: 28px;  
+  font-weight: 700;
+  margin-top: 15px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-bottom: 2px;
+}
+
+#headline{
+  color:#000000;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+/*HOME NEWS TAB FORMATTING END*/
+
+/*ABOUT US FORMATTING START*/
+#aboutUsBack{
+  width: auto;
+  height: 590px;
+  background-color: #E9F3F8;
+  font-family: 'Heebo', sans-serif;
+  padding: 15px;
+  margin:15px;
+}
+
+#imageAboutUs{
+  margin: 15px;
+  margin-left: 18px;
+  height: 328px;
+  width: 45%;
+}
+
+#organising{
+  width: auto;
+  height: 226px;
+  background-color: #E9F3F8;
+  font-family: 'Heebo', sans-serif;
+  padding: 15px;
+  margin:15px;
+}
+
+#contactUs{
+  text-decoration: underline;
+  font-weight:550;
+  color: #123AC6
+}
+
+article p a:hover{
+    color:#194bff;
+}
+
+#video{
+  margin: 15px;
+  
+  height: 328px;
+  width: 48%;
+}
+/*ABOUT US FORMATTING END*/
