@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>RGU Music</title>
+	<!-- Meta information, description about the website -->
+	<meta charset="UTF-8">
+	<meta name="keywords" content="rgu-music, music-store, music-society, concert, music-event">
+	<meta name="description" content="Robert Gordon University Music Portal">
+	<meta name="author" content="Peter Kiss 1806367">
+	<meta name="robots" content="all">
+	<title>RGU-Music</title>
+		<link rel="stylesheet" href="CSS/style.css">
+	<script type="text/javascript">
+		function selectArticle(titleID, articleID) {
+			var title = document.getElementById(titleID).innerHTML;
+			var article = document.getElementById(articleID).innerHTML;
+			// console.log(title + "\n" + article);
+			var selectedTitleContainer = document.getElementById('selected-title');
+			var selectedArticleContainer = document.getElementById('selected-content');
+			selectedTitleContainer.innerHTML = title;
+			selectedArticleContainer.innerHTML = article;
+            document.getElementById("full-textbox").style.backgroundColor="#ffffff";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="container">
+
+		<header>
+			<img src="images/logo-robert-gordon-university-1.png" alt="Logo for Robert Gordon University Aberdeen"></a>
+
+		</header>
+<!-- I learned how to use div and li tags like this with ppt on moodle -->
+			<div class="navigation">
+				<a href="./home.html">HOME</a>
+					<a href="./about-us.html">ABOUT US</a>
+					<a href="./index.html" class="active">NEWS & UPDATES</a>
+					<a href="./contact.html">CONTACT</a>		
+			</div>	
+		<main>
+			<h1>NEWS & UPDATES</h1>
+			<p>We are always waiting for new current news and events, but you can also find our latest music database on
+				our site!</p>
+			<a href="https://www5.rgu.ac.uk/tours/">Take a virtual Tour on RGU</a>
+            
+            <div id="articles">
+				<div id="articles-intro">
+					<article>
+						<img src="./images/playing-music-group.jpg">
+						<div class="article-body">
+							<h3 id="title-1">RGU Music Learning Group</h3>
+							<button onclick="selectArticle('title-1', 'article-1')">READ MORE</button>
+							<div class="textbox">
+								<p id="article-1">The RGU Music Learning Group is having a meet up at 18:30  this Saturday (7th of May) to get to know our new members who are just taking their first steps into playing music. However, please feel free to tag along even if you’re experienced as we are always looking for members who enjoy helping others to learn. We know it can be daunting when you start to learn an instrument, but our society is built with the goal of supporting those who love music, regardless of experience. We’d love to meet all of you on Saturday, so please don’t be shy!
+									<br>
+                                    
+                                    </p>
+							</div>
+						</div>
+					</article>
+					<article>
+						<img src="./images/event.png">
+						<div class="article-body">
+							<h3 id="title-2">New Summer Events Coming</h3>
+							<button onclick="selectArticle('title-2', 'article-2')">READ MORE</button>
+							<div class="textbox">
+								<p id="article-2">
+									Be sure to keep an eye out this summer for our RGU Music members who are taking the step to performing live in front what is sure to be an excited audience! Our very own groups like the (definently real) Pigeon Division and ‘Giraffes? Giraffes!’ will be performing onstage throughout the summer, with dates and locations being released here, so please be sure to check back so we can support them. And remember, there is still plenty of time to start you own shows so feel free to contact our help team if you need some guidance on how to get involved.
+								</p>
+							</div>
+						</div>
+					</article>
+					<article>
+						<img src="./images/sad.webp">
+						<div class="article-body">
+							<h3 id="title-3">Some Events Cancelled</h3>
+							<button onclick="selectArticle('title-3', 'article-3')">READ MORE</button>
+							<div class="textbox">
+								<p id="article-3">
+									Unfortunately, due to unforeseen circumstances all shows on the 6th of May have been cancelled. This is disappointing news to all of us, but we are working hard to reorganise the events as best as we can because we know everyone was really looking forward to this. Make sure you keep an eye on your emails, as event organisers will be getting in contact to give refunds. As soon as we know the new dates we will post them here, so please spread the word!
+								</p>
+							</div>
+						</div>
+					</article>
+					<article>
+						<img src="./images/summer.jpg">
+						<div class="article-body">
+							<h3 id="title-4">Summer Nearly Here</h3>
+							<button onclick="selectArticle('title-4', 'article-4')">READ MORE</button>
+							<div class="textbox">
+								<p id="article-4">
+									Good news - Summer is almost here! Coursework and exams are nearly over, and you can almost taste the freedom, but our society will continue throughout the summer to provide events and ways for you to meet others that are interested in music. Keep an eye out on our News & Updates page so you don’t miss out on any of our fantastic events organised by our very hard working organisers, and performed by our very own hard working musicians.
+								</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div id="selected-article">
+					<h2 id="selected-title"></h2>
+					<div id="full-textbox">
+                        <p id="selected-content"> <img src="images/rgu-central-building.jpg" alt="RGU Sir Ian Wood building" width="720px" height="520px" style="border:5px solid black"></p>
+						
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer>
+			<p>Group Golf, RGU Music-Portal - Copyright 2022</p>
+		</footer>
+	</div>
+</body>
+
+</html>
