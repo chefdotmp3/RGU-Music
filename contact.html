@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RGU Music</title>
+    <!-- Meta information, description about the website -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="rgu-music, music-store, music-society, concert, music-event">
+    <meta name="description" content="Robert Gordon University Music Portal">
+    <meta name="author" content="Peter Kiss 1806367">
+    <meta name="robots" content="all">
+    <title>RGU-Music</title>
+    <link rel="stylesheet" href="CSS/contact.css">
+    <!-- Javascript for contact page enquery -->
+    <script type="text/javascript">
+        function submitForm() {
+            var enquiry = document.getElementById("enquiry").value;
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (!email) {
+                alert("Please enter you E-mail address!");
+            } else if (!message) {
+                alert("Please provide a message")
+            } else {
+                document.getElementById("enquiry").value = "";
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+                alert("Submitted successfully!")
+            }
+        }
+
+        function validateEntry(entry) {
+            if (entry) {
+                return true;
+            }
+            return false;
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- Content for Contact page -->
+    <div class="container">
+
+        <header>
+            <img src=" images/logo-robert-gordon-university-1.png" alt="Logo for Robert Gordon University Aberdeen"></a>
+
+        </header>
+			<div class="navigation">
+				<a href="./homw.html">HOME</a>
+					<a href="./about-us.html">ABOUT US</a>
+					<a href="./index.html" class="active">NEWS & UPDATES</a>
+					<a href="./contact.html">CONTACT</a>		
+			</div>		
+        <main>
+            <h1>CONTACT</h1>
+            <p>Contact the Help Team!</p>
+
+            <form>
+                <fieldset style="float: left;">
+                    <label for="enquiry">What can we help you with?</label>
+                    <input type="text" name="enquiry" id="enquiry" width="100" style="margin-bottom: 100px;">
+                    <label for="name">Your name:</label>
+                    <input type="text" name="name" id="name" width="50">
+                    <label for="email">E-mail address that you prefer to be contacted at:</label>
+                    <input type="text" name="email" id="email" width="50">
+                </fieldset>
+                <fieldset>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="11" style="width: 750px;"></textarea>
+                </fieldset>
+            </form>
+            <button id="submit-button" onclick="submitForm()">Submit</button>
+
+          
+        </main>
+        <h4>Contact us via<br><a href="mailto: admissions@rgu.ac.uk">E-mail: UK and EU admissions Office</a><br>Telephone:01242 025 4589 </h4>
+
+        <footer>
+            <p>Group Golf, RGU Music-Portal - Copyright 2022</p>
+         </footer>
+    </div>
+</body>
+
+</html>
